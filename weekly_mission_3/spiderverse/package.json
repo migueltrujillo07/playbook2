@@ -11,5 +11,8 @@
     "url": "https://github.com/migueltrujillo07/playbook2/tree/master/weekly_mission_3"
   },
   "author": "MiguelTrujillo",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
