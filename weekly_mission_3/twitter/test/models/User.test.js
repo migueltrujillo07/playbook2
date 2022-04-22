@@ -9,12 +9,12 @@ describe("Init TEST for user class", () =>{
         //Aqui se validan los resultados de este codigo 
         //Esta es una comparacion que va a igualar el valor de la izquierda con el valor de la derecha(valorEsperado)
         
-        expect(user.id).toBe(3)
+        expect(user.id).toBe(1)
         expect(user.username).toBe("MiguelLopez")
         expect(user.name).toBe("Miguel")
         expect(user.bio).toBe("Mechatronics in process")
-        expect(user.dateCreated).toBe("datecreated")
-        expect(user.lastUpdate).toBe("lastupdate")
+        expect(user.dateCreated).not.toBeUndefined() //Verifica que el valor no sea undefine
+        expect(user.lastUpdate).not.toBeUndefined()
 
     })
 
