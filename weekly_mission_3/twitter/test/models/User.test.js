@@ -27,4 +27,10 @@ describe("Init TEST for user class", () =>{
 
     });
 
+    test('Add setters', () =>{
+        const user = new User(1,"MiguelTrujillo","Miguel","bio")
+        user.setUsername = "Trujillo"
+        expect(user.bio).toBe("bio")
+    })
+
 })
