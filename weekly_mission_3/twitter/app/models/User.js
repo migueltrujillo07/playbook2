@@ -1,5 +1,5 @@
 class User {
-    constructor(id,username,name,bio,dateCreated,lastUpdate,getUsername, getBio, getDateCreated, gerLastUpdate){        
+    constructor(id,username,name,bio,dateCreated,lastUpdate){        
         this.id = id;
         this.username = username;
         this.name = name;
@@ -7,7 +7,9 @@ class User {
         this.dateCreated = new Date();
         this.lastUpdate = new Date();
 
-        get getUsername(){
+
+    }
+            get getUsername(){
             return this.username
         }
 
@@ -18,11 +20,11 @@ class User {
         get getDateCreated (){
             return this.dateCreated
         }
-
-        get getLastUpdate (){
+        
+        get getLastUpdated (){
             return this.lastUpdate
         }
-    }
+        
 }
 
 module.exports = User
