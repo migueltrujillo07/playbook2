@@ -1,4 +1,4 @@
-const UserService = require('./../../app/services/UserService')
+const UserService = require('./../../app/services/UserServices')
 
 describe("Test for services", () => {
    
@@ -6,7 +6,7 @@ describe("Test for services", () => {
         
         const user = UserService.create(1, "migueltrujillo", "mike")
         expect(user.username).toBe("migueltrujillo")
-        expect(user.username).toBe("mike")
+        expect(user.name).toBe("mike")
         expect(user.id).toBe(1)
         expect(user.bio).not.toBeUndefined()
         
