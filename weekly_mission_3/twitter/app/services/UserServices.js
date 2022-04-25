@@ -11,7 +11,7 @@ class UserService {
         return user.username = newUsername
     }
     static getAllUsernames(user1, user2, user3, usernames){
-        return [usernames.id, usernames.username., usrnames.name]
+        return [usernames.id, usernames.username. usrnames.name]
     }
     
 
