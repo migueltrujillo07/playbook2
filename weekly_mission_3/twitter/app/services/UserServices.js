@@ -10,8 +10,8 @@ class UserService {
     static updateUserUsername(user,newUsername){
         return user.username = newUsername
     }
-    static getAllUsernames(user1, user2, user3){
-        return [user1, user2, user3]
+    static getAllUsernames([user1, user2, user3]){
+        return 
     }
     
 
