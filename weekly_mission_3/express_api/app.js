@@ -26,6 +26,12 @@ app.get('/v1/explorers/:id', (req, res) => {
     res.status(200).json(explorer)
 
 })
+app.post('/v1/explorers', (req, res) =>{
+    console.log(`Api Explorers POST reques ${new Date()}`)
+    const resquetBody= req.body //Parametros de un cliente
+    res.status(201).json({message: "Created"})
+
+})
 
 //Con esto inicializamos esta app
 app.listen(port, () =>{
