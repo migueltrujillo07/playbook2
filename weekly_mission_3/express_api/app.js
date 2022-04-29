@@ -11,6 +11,11 @@ const port = 3000
 app.get('/v1/explorers', (req, res) => {
     console.log(`Api Explorers GET ALL request ${new Date()}`)
     const explorer1 = {id: 1, name: "Miguel1"}
+    const explorer2 = {id: 2, name: "Miguel2"}
+    const explorer3 = {id: 3, name: "Miguel3"}
+    const explorer4 = {id: 4, name: "Miguel4"}
+    const explorer = [explorer1, explorer2, explorer3, explorer4]
+    res.status(200).json(explorers)
 
 })
 
