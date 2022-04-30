@@ -11,7 +11,7 @@ class UserService {
         return user.username = newUsername
     }
     static getAllUsernames(username){
-        return username.map(username)
+        return username.map(mike => mike.getUsername)
     }
     
 
