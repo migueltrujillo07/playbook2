@@ -32,6 +32,13 @@ app.post('/v1/explorers', (req, res) =>{
     res.status(201).json({message: "Created"})
 
 })
+app.put('/v1/explorers/:id', (req, res) => {
+    console.log(`Api Explorers PUT request ${new Date()}`)
+    console.log(`Update explorer with ${req.params.id}`)
+    const resquestBody = req.body //Parametros de un cliente
+    res.status(200).json({message: "Update"})
+
+})
 
 //Con esto inicializamos esta app
 app.listen(port, () =>{
